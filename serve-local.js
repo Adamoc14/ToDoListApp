@@ -7,7 +7,7 @@ const express = require('./libs_required')
 
 // App Configurations
 require('dotenv').config()
-app.use(express.static("resources"))
+app.use(express.static(`${__dirname}/resources`));
 app.use(methodOverride("_method"))
 app.use(bodyParser.urlencoded({extended: true}))
 app.set("views" , `${__dirname}/views`)

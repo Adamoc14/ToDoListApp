@@ -8,7 +8,6 @@
     box-sizing: border-box;
 	font-family: sans-serif;
 	font-weight: 500;
-
 	scroll-behavior: smooth;
 }
 
@@ -31,7 +30,8 @@ h2{
 }
 
 h3 , 
-h4 {
+h4 , 
+label{
     font-size: 1.5vw;
 }
 
@@ -49,10 +49,11 @@ img , video{
 }
 
 input[type=text],
-input[type=email],
-input[type=submit],
-textarea { 
+input[type=email], 
+textarea ,
+select{ 
     width: 100%;
+    font-size: 2vw;
     outline:none;
     border: none;
 }
@@ -82,5 +83,5 @@ footer{
     display: flex;
     justify-content: center;
     text-align: center;
-    background: yellow;
+    background: mintcream;
 }
