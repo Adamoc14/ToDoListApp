@@ -8,10 +8,12 @@
 }
 
 .main_container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 4em 2em;
     align-items: center;
+    background: cadetblue;
 }
 
 .tasks_container {

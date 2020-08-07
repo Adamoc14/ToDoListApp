@@ -1,0 +1,22 @@
+.single_main_container * {
+    margin: 1em 0em;
+}
+
+.single_main_container {
+    padding: 2em 2em;
+    height: 90vh;
+    background: antiquewhite;
+    width: 67vw;
+    margin: 5vh auto;
+}
+
+.close_task {
+    background: #c48f56;
+    cursor: pointer;
+    position: absolute;
+    right: 20%;
+    border-radius: 50%;
+    top: 8%;
+    width: 3.5%;
+    text-align: center;
+}
