@@ -1,10 +1,25 @@
 .plus_btn_add {
-    padding: .5em 1em;
-    background: #c48f56;
+    background: #EC5E6C;
+    color: #fff;
     cursor: pointer;
     position: absolute;
     right: 20%;
     top: 8%;
+    display: flex;
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.fa-2x {
+    font-size: 1.5em;
+}
+
+.main_container h2 {
+    text-transform: none;
+    font-size: 3vw;
+    letter-spacing: .1em;
 }
 
 .main_container {
@@ -13,7 +28,7 @@
     flex-direction: column;
     padding: 4em 2em;
     align-items: center;
-    background: cadetblue;
+    background: #FCFCFC;
 }
 
 .tasks_container {
@@ -26,11 +41,29 @@
 .task_container {
     flex: 1 1 22%;
     padding: 2em 2em;
-    background: antiquewhite;
+    background: #FFF;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     margin: 1em;
     justify-content: space-around;
     height: 26vh;
+    box-shadow: 0px 12px 14px 2px #eee;
+}
+
+.task_container div:first-child {
+    display: flex;
+    height: 100%;
+    position: relative;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.priority_tag {
+    margin-bottom: .3em;
+}
+
+.date {
+    color: grey;
+    margin-top: 1em;
 }
