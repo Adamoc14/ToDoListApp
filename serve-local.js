@@ -1,7 +1,7 @@
 // App variable and function Definitions
 const express = require('./libs_required')
     app = express()
-    port = process.env.port || 3000
+    port = process.env.Port || 3000
     indexRoute = require('./routes/index')
     todoRoutes = require('./routes/tasks')
 
