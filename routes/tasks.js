@@ -4,11 +4,12 @@ const express = require('../libs_required'),
     helper = require('../helper_func')
 
 /**
- * This router is mounted at https://localhost:3000/task , so every route after this is prepended with
- * /todo and then something else / === "/task" , /:id === "/task/:id" , etc...
+ * This router is mounted at https://localhost:3000/ , so every route after this is prepended with
+ * / and then something else / === "/" , /:id === "/:id" , etc...
  */
 
 router.get("/", (req, res)=> {
+    console.log("What's happening?")
     task.find({}, (err , allTasks) => {
         if(err) console.log(err)
         res.render("all" , {tasks : allTasks })
