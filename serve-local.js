@@ -1,9 +1,9 @@
 // App variable and function Definitions
 const express = require('./libs_required'),
     app = express(),
-    port = process.env.Port || 3000,
     // indexRoute = require('./routes/index'),
     todoRoutes = require('./routes/tasks');
+let port = process.env.Port || 3000
 
 // App Configurations
 require('dotenv').config()
@@ -20,5 +20,5 @@ app.use("/" , todoRoutes)
 
 
 app.listen(port , () => {
-    console.log(`Your server seems to have started on port ${port}${process.env.Port} , fair play chief`)
+    console.log(`Your server seems to have started on port ${port} ${process.env.Port} , fair play chief`)
 })
