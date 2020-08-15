@@ -1,9 +1,10 @@
 .formContainer {
     padding: 2em 2em;
     display: flex;
-    background: cadetblue;
+    background: #fff;
     flex-direction: column;
     align-items: center;
+    box-shadow: -3px -6px 14px 18px #eee;
 }
 
 .formContainer form {
@@ -19,9 +20,16 @@
     padding: .3em 1em;
     font-size: 2vw;
     margin: 0 auto;
+    border: none;
+    background: #F1D065;
+    color: white;
 }
 
 .container{
     margin: 1em;
+}
+
+#add{
+    background: #81CE84;
 }
 

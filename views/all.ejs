@@ -1,12 +1,13 @@
 <%- include("templates/header") %>
-<a class="plus_btn_add addPhotoBtn" href="/task/new"><i class="fa fa-2x fa-plus" aria-hidden="true"></i></a>
+<a class="plus_btn_add addPhotoBtn" href="/new"><i class="fa fa-2x fa-plus" aria-hidden="true"></i></a>
 <div class="main_container">
+    <h2>Hey Adam,</h2>
     <h2>This is your to-do list</h2>
     <div class="tasks_container">
         <% tasks.forEach(function(task){ %>
-            <a href="/task/<%=task._id%>" class="task_container">
-                <div>
-                    <h3 class="priority_tag"><%= task.priority %></h3>
+            <a href="/<%=task._id%>" class="task_container">
+                <h3 class="priority_tag"><%= task.priority %></h3>
+                <div class="details">
                     <h3 class="title"><%= task.title %></h3>
                     <p class="description"><%= task.description.slice(0,60) %></p>
                     <h6 class="date"><%= task.Date.toString(). slice(0,15) %></h6>

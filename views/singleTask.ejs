@@ -1,13 +1,15 @@
 <%- include("templates/header") %>
 <div class="single_main_container">
-    <a class="close_task" href="/task"><i class="fa fa-1x fa-close" aria-hidden="true"></i></a>
-    <h2><%= task.title %></h2>
-    <p><%= task.description %></p>
-    <h5><%= task.priority %></h5>
-    <h6><%= task.Date %></h5>
+    <a class="close_task" href="/"><i class="fa fa-1x fa-close" aria-hidden="true"></i></a>
+    <h3 class="priority_tag_single"><%= task.priority %></h3>
+    <div class="details_single">
+        <h3 class="title"><%= task.title %></h3>
+        <p class="description"><%= task.description.slice(0,60) %></p>
+        <h6 class="date"><%= task.Date.toString(). slice(0,15) %></h6>
+    </div>
     <div class="control_btns_container">
-        <a href="/task/<%= task.id %>/edit" class="edit_btn">Edit</a>
-        <form action="/task/<%= task.id %>?_method=DELETE" class="delete_form" method="post">
+        <a href="/<%= task.id %>/edit" class="edit_btn">Edit Task</a>
+        <form action="<%= task.id %>?_method=DELETE" class="delete_form" method="post">
             <input type="submit" class="delete_btn" value="Delete Task">
         </form>
     </div>

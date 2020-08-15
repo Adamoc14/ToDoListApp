@@ -20,7 +20,7 @@ router.post("/" , (req,res)=> {
     const newTask = req.body.Task
     task.create(newTask , (err , newlyCreatedTask) => {
         if(err) console.log(err)
-        res.redirect('/task')
+        res.redirect('/')
     })
 })
 
@@ -41,7 +41,7 @@ router.put("/:id" , (req, res) => {
     const newTask = req.body.Task
     task.findByIdAndUpdate(req.params.id , newTask , (err, newlyUpdatedTask)=> {
         if(err) console.log(err)
-        res.redirect("/task")
+        res.redirect("/")
     })
 })
 
@@ -49,7 +49,7 @@ router.delete("/:id" , (req, res) => {
     if(!helper.validateId(req.params.id)) return
     task.findByIdAndRemove(req.params.id , (err, newlyDeletedTask) => {
         if(err) console.log(err)
-        res.redirect("/task")
+        res.redirect("/")
     })
 })
 

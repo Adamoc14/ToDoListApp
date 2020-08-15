@@ -55,7 +55,7 @@ select{
     width: 100%;
     font-size: 2vw;
     outline:none;
-    border: none;
+    border: 1px solid #eee;
 }
 textarea{
     border: none;
@@ -78,10 +78,11 @@ label{
 /* Header and footer styling */
 
 
-footer{
+footer {
     padding: 2em 2em;
     display: flex;
     justify-content: center;
     text-align: center;
-    background: mintcream;
+    border-top: 1px solid #eee;
+    background: #fff;
 }

@@ -14,8 +14,8 @@ app.set("views" , `${__dirname}/views`)
 app.set("view engine", "ejs")
 
 //Routes
-app.use("/" , indexRoute)
-app.use("/task" , todoRoutes)
+// app.use("/" , indexRoute)
+app.use("/" , todoRoutes)
 
 app.listen(port , ()=> {
     console.log("Your server seems to have started , fair play chief")
