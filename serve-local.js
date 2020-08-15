@@ -19,6 +19,6 @@ console.log("well")
 app.use("/" , todoRoutes)
 
 
-app.listen(port , ()=> {
-    console.log(`Your server seems to have started on port ${port}${process.env.port} , fair play chief`)
+app.listen(port , () => {
+    console.log(`Your server seems to have started on port ${port}${process.env.Port} , fair play chief`)
 })
