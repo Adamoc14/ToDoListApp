@@ -5,7 +5,7 @@
   "main": "serve-local.js",
   "scripts": {
     "debug": "nodemon --inspect serve-local.js",
-    "start": "nodemon serve-remote.js"
+    "start": "nodemon serve-local.js"
   },
   "keywords": [],
   "author": "",
