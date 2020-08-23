@@ -1,11 +1,11 @@
 {
-  "name": "FullStackApp",
+  "name": "todolistapp",
   "version": "1.0.0",
   "description": "",
   "main": "serve-local.js",
   "scripts": {
     "debug": "nodemon --inspect serve-local.js",
-    "start": "nodemon serve-local.js"
+    "start": "node serve-local.js"
   },
   "keywords": [],
   "author": "",

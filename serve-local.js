@@ -1,7 +1,7 @@
 // App variable and function Definitions
 const express = require('./libs_required')
     app = express()
-    port = process.env.PORT || 3000
+    port = process.env.PORT || 9000
     // indexRoute = require('./routes/index'),
     todoRoutes = require('./routes/tasks')
 
@@ -16,10 +16,10 @@ app.set("view engine", "ejs")
 
 //Routes
 // app.use("/" , indexRoute)
-console.log("well")
+console.log(todoRoutes , port)
 app.use("/" , todoRoutes)
 
 
 app.listen(port , () => {
-    console.log(`Your server seems to have started on port ${port} ${process.env.PORT} , fair play chief`)
+    console.log(`Your server seems to have started on port ${port}, fair play chief`)
 })
