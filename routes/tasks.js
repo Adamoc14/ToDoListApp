@@ -30,6 +30,7 @@ router.get("/new" , (req, res)=> {
 })
 
 router.get("/:id" , (req, res)=> {
+    if(req.params.id === "favicon.ico") return
     if(!helper.validateId(req.params.id)) return
     task.findById(req.params.id , (err,foundTask) => {
         if (err) console.log(err)
