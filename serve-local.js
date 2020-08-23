@@ -16,7 +16,6 @@ app.set("view engine", "ejs")
 
 //Routes
 // app.use("/" , indexRoute)
-console.log(todoRoutes , port)
 app.use("/" , todoRoutes)
 
 

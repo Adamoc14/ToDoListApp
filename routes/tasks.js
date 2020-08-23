@@ -9,7 +9,6 @@ const express = require('../libs_required'),
  */
 
 router.get("/", (req, res)=> {
-    console.log("What's happening?")
     task.find({}, (err , allTasks) => {
         if(err) console.log(err)
         res.render("all" , {tasks : allTasks })
